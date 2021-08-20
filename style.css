@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+/* activate position: relative; here for sticky/fixed */
+body {
+  margin: 0;
+  background-color: rgba(245, 233, 124, .6);
+  /* position: relative; */
+}
+
+.top-container {
+  width: 80vw;
+  margin: 0 auto;
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box {
+  height: 60px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box1 {
+  background-color: red;
+}
+
+.boxa {
+  background-color: red;
+}
+
+.boxb {
+  background-color: red;
+}
+
+/* this is the relative box */
+.box3 {
+  background-color: rgb(0, 0, 255);
+  cursor: pointer;
+  position: relative;
+}
+
+/* this is the absolute box,
+    positioned relative to box3,
+    hidden by display: none; */
+.drop-down {
+  display: none;
+  position: absolute;
+  top: 61px;
+  left: 0;
+  z-index: 0;
+  background-color: green;
+  padding: 1.25rem;
+  height: auto;  /* let the height/width */
+  width: auto;   /* grow automatically */
+                 /* for it's contents */
+}
+
+/* on hover make box2 appear */
+.box3:hover .drop-down{
+  display: block;
+}
+
+.main-container {
+  font-size: 2rem;
+  height: 2000px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+.main-container p {
+  margin: 10rem 0 0 0;
+  padding: 0;
+}
+
+.face i {
+  font-size: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+  
+}
+
+@media screen and (max-width: 480px) {
+  
+}
